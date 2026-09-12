@@ -1,0 +1,43 @@
+site_name: CLIP → SigLIP From Scratch
+site_description: A from-scratch PyTorch + TensorFlow replication and comparison of CLIP and SigLIP, trained on Flickr8k.
+site_url: https://KartikBankar21.github.io/paper-replication/
+repo_url: https://github.com/KartikBankar21/paper-replication
+repo_name: KartikBankar21/paper-replication
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+
+nav:
+  - Overview: index.md
+  - "Notebook: PyTorch": notebooks/clip_siglip_colab.ipynb
+  - "Notebook: TensorFlow": notebooks/clip_siglip_colab_tensorflow.ipynb
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false          # render the notebook's SAVED outputs — do not re-run it during the site build
+      include_requirejs: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables

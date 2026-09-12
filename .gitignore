@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+site/
+.DS_Store
+checkpoints/
+*.weights.h5
+*.pt
